@@ -7,10 +7,10 @@ direccion,
 telefono,
 fecha_alta,
 suscripcion)
-values(33445566, 'juan', 'perez', '1988-05-15', 'Av Siempreviva 555', 011-1567899879, '2015-05-15', 'activa'),
-(34347788, 'carlos', 'calabresa', '1987-05-27', 'Av Cordoba 123', 011-1564566549, '2016-06-16', 'activa'),
-(33556677, 'esteban', 'quito', '1988-04-24', 'Av del Trabajador 1122', 011-1561233219, '2014-04-14', 'desactiva'),
-(33445588, 'andrea', 'lira', '1989-01-29', 'Bv los Andes 3355', 0342-155398022, '2019-01-11', 'activa');
+values(33445566, 'juan', 'perez', '1988-05-15', 'Av Siempreviva 555', '011-1567899879', '2015-05-15', 'activa'),
+(34347788, 'carlos', 'calabresa', '1987-05-27', 'Av Cordoba 123', '011-1564566549', '2016-06-16', 'activa'),
+(33556677, 'esteban', 'quito', '1988-04-24', 'Av del Trabajador 1122','011-1561233219', '2014-04-14', 'desactiva'),
+(33445588, 'andrea', 'lira', '1989-01-29', 'Bv los Andes 3355', '0342-155398022', '2019-01-11', 'activa');
 
 insert into libros(
 titulo,
