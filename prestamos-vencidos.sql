@@ -7,7 +7,7 @@ CREATE PROCEDURE `prestamos_vencidos` ()
 BEGIN
 select s.*, p.estado
 from prestamos p 
-join socios s on(s.dni)
+join socios s on p.socios_dni = s.dni
 where p.estado = 'vencido';
 END$$
 

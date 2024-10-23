@@ -11,7 +11,7 @@ where estado = 'vencido';
 select s.dni, s.nombre, s.apellido, s.telefono, p.fecha_retiro, p.fecha_devolucion
 from prestamos p
 left join libros l on p.libros_codigo = l.codigo
-left join socios s on p.socios_dni = p.id_prestamos
+left join socios s on p.socios_dni = s.dni
 where p.fecha_devolucion = curdate();
 
 select distinct(l.codigo), l.titulo, l.autor, l.genero, l.año_edicion, p.estado
