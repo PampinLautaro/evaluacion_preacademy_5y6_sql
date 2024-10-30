@@ -17,7 +17,7 @@ where p.fecha_devolucion = curdate();
 select distinct(l.codigo), l.titulo, l.autor, l.genero, l.año_edicion, p.estado
 from prestamos p
 join libros l on p.libros_codigo = l.codigo
-where estado = 'devuelto'
+where estado = 'devuelto' or null
 order by autor;
 
 select l.titulo, l.autor, l.genero, count(distinct(p.libros_codigo)) as veces_prestado
